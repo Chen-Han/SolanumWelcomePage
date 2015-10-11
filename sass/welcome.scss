@@ -1,0 +1,132 @@
+@import "materialize-override";
+@import "utility";
+
+$primaryColor: #F38630;
+$primaryFaded: fade-out($primaryColor,0.1);
+$primaryL10: lighten($primaryColor, 10);
+$primaryD10: darken($primaryColor, 10);
+$complementColor:#2e1572;
+$complementD10:darken($complementColor,10);
+$complementL10:lighten($complementColor,10);
+$readingBgColor: #fafafa;
+
+nav.landing {
+    background-color: $primaryColor;
+}
+
+section.landing {
+    padding:5% 0;
+    background:linear-gradient($primaryFaded,$primaryFaded),
+    	url(images/farm.jpeg);
+    min-height: 100%;
+    width: 100%;
+    text-align: center;
+
+    .title {
+        color: white;
+    }
+
+    .slogan {
+        color: $primaryL10;
+    }
+
+    .search-box {
+        display: inline-block;
+
+        input {
+            color: white;
+            text-align: center;
+        }
+    }
+    .action-box{
+    	button{
+    		margin:0 5px;
+    	}
+    }
+}
+
+section.about {
+    background-color: $readingBgColor;
+	padding:100px 20px;
+	min-height:100%;
+    .title {
+        color: $primaryD10;
+        text-align: center;
+		margin-top:0;
+        &:after {
+            content: " ";
+            height: 1px;
+            display: table;
+            position: absolute;
+            left: 50%;
+            margin-left: -100px;
+            width: 200px;
+            border-bottom: 2px solid black;
+        }
+    }
+
+    .feature {
+        padding: 10px 0;
+
+        .feature-icon {
+            font-size: 3em;
+            color:$primaryColor;
+        }
+
+        .feature-name {
+            margin: 0;
+            display: inline-block;
+            color: $primaryL10;
+            font-size: 2em;
+        }
+
+        .detail {
+            margin: 0;
+        }
+    }
+}
+
+
+section.sign-up{
+	text-align:center;
+	padding:100px 20px;
+	min-height:100%;
+	background-color:$complementColor;
+	.title{
+		color:$primaryL10;
+	}
+	p.feature{
+		color:$primaryD10;
+	}
+	button{
+		background-color:$primaryColor;
+		color:white;
+		&:hover{
+			background-color:$primaryD10;
+		}
+	}
+}
+
+footer.footer{
+	background-color:$complementD10;
+	padding:0 10px;
+	.brand{
+		color:white;
+		padding:10px 0;
+		display: inline-block;
+		float:left;
+	}
+	ul.links{
+		list-style: none;
+		padding:10px 0;
+		margin:0;
+		float:right;
+		li{
+			display:inline-block;
+			a{
+				color:white;
+				margin:5px;
+			}
+		}
+	}
+}

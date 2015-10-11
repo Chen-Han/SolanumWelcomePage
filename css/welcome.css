@@ -1,0 +1,110 @@
+.btn.clear {
+  background-color: transparent;
+  border: 1px solid #fff; }
+
+.clear-fix:before, .clear-fix:after {
+  content: " ";
+  display: table;
+  clear: both; }
+
+.section-wrapper {
+  min-height: 100%; }
+  .section-wrapper .background {
+    width: 100%;
+    height: 100%;
+    position: absolute; }
+  .section-wrapper .foreground {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+
+.images.image-cover {
+  width: 100%;
+  height: 100%; }
+
+nav.landing {
+  background-color: #F38630; }
+
+section.landing {
+  padding: 5% 0;
+  background: linear-gradient(rgba(243, 134, 48, 0.9), rgba(243, 134, 48, 0.9)), url(images/farm.jpeg);
+  min-height: 100%;
+  width: 100%;
+  text-align: center; }
+  section.landing .title {
+    color: white; }
+  section.landing .slogan {
+    color: #f6a260; }
+  section.landing .search-box {
+    display: inline-block; }
+    section.landing .search-box input {
+      color: white;
+      text-align: center; }
+  section.landing .action-box button {
+    margin: 0 5px; }
+
+section.about {
+  background-color: #fafafa;
+  padding: 100px 20px;
+  min-height: 100%; }
+  section.about .title {
+    color: #e36b0d;
+    text-align: center;
+    margin-top: 0; }
+    section.about .title:after {
+      content: " ";
+      height: 1px;
+      display: table;
+      position: absolute;
+      left: 50%;
+      margin-left: -100px;
+      width: 200px;
+      border-bottom: 2px solid black; }
+  section.about .feature {
+    padding: 10px 0; }
+    section.about .feature .feature-icon {
+      font-size: 3em;
+      color: #F38630; }
+    section.about .feature .feature-name {
+      margin: 0;
+      display: inline-block;
+      color: #f6a260;
+      font-size: 2em; }
+    section.about .feature .detail {
+      margin: 0; }
+
+section.sign-up {
+  text-align: center;
+  padding: 100px 20px;
+  min-height: 100%;
+  background-color: #2e1572; }
+  section.sign-up .title {
+    color: #f6a260; }
+  section.sign-up p.feature {
+    color: #e36b0d; }
+  section.sign-up button {
+    background-color: #F38630;
+    color: white; }
+    section.sign-up button:hover {
+      background-color: #e36b0d; }
+
+footer.footer {
+  background-color: #1d0d47;
+  padding: 0 10px; }
+  footer.footer .brand {
+    color: white;
+    padding: 10px 0;
+    display: inline-block;
+    float: left; }
+  footer.footer ul.links {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    float: right; }
+    footer.footer ul.links li {
+      display: inline-block; }
+      footer.footer ul.links li a {
+        color: white;
+        margin: 5px; }
+
+/*# sourceMappingURL=welcome.css.map */
